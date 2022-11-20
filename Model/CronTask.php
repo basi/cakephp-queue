@@ -7,6 +7,8 @@ App::uses('QueueAppModel', 'Queue.Model');
  */
 class CronTask extends QueueAppModel {
 
+	public $useDbConfig = 'queue';
+
 	public $rateHistory = [];
 
 	public $exit = false;
